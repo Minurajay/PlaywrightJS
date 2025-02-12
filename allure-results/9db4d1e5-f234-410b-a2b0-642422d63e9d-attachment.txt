@@ -1,0 +1,2 @@
+Test passed! Selected country: Australia
+Test passed! Selected country: Argentina

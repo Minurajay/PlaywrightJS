@@ -1,0 +1,48 @@
+Error occurred: ExpectError: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Australia"
+Received: "Austria"
+    at DropdownTest.selectCountryFromDropdown (D:\Playwright\tests\dropdownbest.spec.js:32:29)
+    at D:\Playwright\tests\dropdownbest.spec.js:50:3 {
+  matcherResult: {
+    actual: 'Austria',
+    expected: 'Australia',
+    message: '\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n' +
+      '\n' +
+      'Expected: \x1B[32m"Austr\x1B[7mal\x1B[27mia"\x1B[39m\n' +
+      'Received: \x1B[31m"Austria"\x1B[39m',
+    name: 'toBe',
+    pass: false
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@21',
+    category: 'expect',
+    title: 'expect.toBe',
+    params: { expected: 'Australia' },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'D:\\Playwright\\tests\\dropdownbest.spec.js',
+      line: 32,
+      column: 29,
+      function: 'DropdownTest.selectCountryFromDropdown'
+    },
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735486699009,
+    error: {
+      message: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n' +
+        '\n' +
+        'Expected: \x1B[32m"Austr\x1B[7mal\x1B[27mia"\x1B[39m\n' +
+        'Received: \x1B[31m"Austria"\x1B[39m',
+      stack: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBe\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // Object.is equality\x1B[22m\n' +
+        '\n' +
+        'Expected: \x1B[32m"Austr\x1B[7mal\x1B[27mia"\x1B[39m\n' +
+        'Received: \x1B[31m"Austria"\x1B[39m\n' +
+        '    at DropdownTest.selectCountryFromDropdown (D:\\Playwright\\tests\\dropdownbest.spec.js:32:29)\n' +
+        '    at D:\\Playwright\\tests\\dropdownbest.spec.js:50:3',
+      cause: undefined,
+      matcherResult: [Object]
+    }
+  }
+}

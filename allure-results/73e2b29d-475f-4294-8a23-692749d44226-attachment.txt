@@ -1,0 +1,1 @@
+Test passed! Selected country: India

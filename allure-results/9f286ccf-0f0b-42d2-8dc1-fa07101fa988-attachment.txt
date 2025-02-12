@@ -1,0 +1,48 @@
+Error occurred: expect.toBeVisible: Error: strict mode violation: locator('.ui-menu.ui-widget li').locator('text=India') resolved to 2 elements:
+    1) <div id="ui-id-2" tabindex="-1" class="ui-menu-item-wrapper">British Indian Ocean Territory</div> aka getByText('British Indian Ocean Territory')
+    2) <div id="ui-id-3" tabindex="-1" class="ui-menu-item-wrapper">India</div> aka getByText('India', { exact: true })
+
+Call log:
+  - expect.toBeVisible with timeout 10000ms
+  - waiting for locator('.ui-menu.ui-widget li').locator('text=India')
+
+    at DropdownTest.selectCountryFromDropdown (D:\Playwright\tests\dropdownbest.spec.js:25:28)
+    at D:\Playwright\tests\dropdownbest.spec.js:45:3 {
+  [Symbol(step)]: {
+    stepId: 'expect@11',
+    category: 'expect',
+    title: 'expect.toBeVisible',
+    params: { expected: [Object] },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'D:\\Playwright\\tests\\dropdownbest.spec.js',
+      line: 25,
+      column: 28,
+      function: 'DropdownTest.selectCountryFromDropdown'
+    },
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735486955739,
+    error: {
+      message: "Error: expect.toBeVisible: Error: strict mode violation: locator('.ui-menu.ui-widget li').locator('text=India') resolved to 2 elements:\n" +
+        `    1) <div id="ui-id-2" tabindex="-1" class="ui-menu-item-wrapper">British Indian Ocean Territory</div> aka getByText('British Indian Ocean Territory')\n` +
+        `    2) <div id="ui-id-3" tabindex="-1" class="ui-menu-item-wrapper">India</div> aka getByText('India', { exact: true })\n` +
+        '\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 10000ms\x1B[22m\n' +
+        "\x1B[2m  - waiting for locator('.ui-menu.ui-widget li').locator('text=India')\x1B[22m\n",
+      stack: "Error: expect.toBeVisible: Error: strict mode violation: locator('.ui-menu.ui-widget li').locator('text=India') resolved to 2 elements:\n" +
+        `    1) <div id="ui-id-2" tabindex="-1" class="ui-menu-item-wrapper">British Indian Ocean Territory</div> aka getByText('British Indian Ocean Territory')\n` +
+        `    2) <div id="ui-id-3" tabindex="-1" class="ui-menu-item-wrapper">India</div> aka getByText('India', { exact: true })\n` +
+        '\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeVisible with timeout 10000ms\x1B[22m\n' +
+        "\x1B[2m  - waiting for locator('.ui-menu.ui-widget li').locator('text=India')\x1B[22m\n" +
+        '\n' +
+        '    at DropdownTest.selectCountryFromDropdown (D:\\Playwright\\tests\\dropdownbest.spec.js:25:28)\n' +
+        '    at D:\\Playwright\\tests\\dropdownbest.spec.js:45:3',
+      cause: undefined
+    }
+  }
+}

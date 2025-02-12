@@ -1,0 +1,45 @@
+Error occurred: ExpectError: expect(received).toContain(expected) // indexOf
+
+Expected substring: "Australia"
+Received string:    "Austria"
+    at DropdownTest.selectCountryFromDropdown (D:\Playwright\tests\dropdownbest.spec.js:34:29)
+    at D:\Playwright\tests\dropdownbest.spec.js:52:3 {
+  matcherResult: {
+    message: '\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n' +
+      '\n' +
+      'Expected substring: \x1B[32m"Australia"\x1B[39m\n' +
+      'Received string:    \x1B[31m"Austria"\x1B[39m',
+    pass: false
+  },
+  [Symbol(step)]: {
+    stepId: 'expect@21',
+    category: 'expect',
+    title: 'expect.toContain',
+    params: { expected: 'Australia' },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'D:\\Playwright\\tests\\dropdownbest.spec.js',
+      line: 34,
+      column: 29,
+      function: 'DropdownTest.selectCountryFromDropdown'
+    },
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735486984146,
+    error: {
+      message: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n' +
+        '\n' +
+        'Expected substring: \x1B[32m"Australia"\x1B[39m\n' +
+        'Received string:    \x1B[31m"Austria"\x1B[39m',
+      stack: 'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoContain\x1B[2m(\x1B[22m\x1B[32mexpected\x1B[39m\x1B[2m) // indexOf\x1B[22m\n' +
+        '\n' +
+        'Expected substring: \x1B[32m"Australia"\x1B[39m\n' +
+        'Received string:    \x1B[31m"Austria"\x1B[39m\n' +
+        '    at DropdownTest.selectCountryFromDropdown (D:\\Playwright\\tests\\dropdownbest.spec.js:34:29)\n' +
+        '    at D:\\Playwright\\tests\\dropdownbest.spec.js:52:3',
+      cause: undefined,
+      matcherResult: [Object]
+    }
+  }
+}

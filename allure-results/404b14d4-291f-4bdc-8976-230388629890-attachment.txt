@@ -1,0 +1,48 @@
+Error occurred: expect.toBeHidden: Error: strict mode violation: locator('.ui-menu.ui-widget li') resolved to 2 elements:
+    1) <li class="ui-menu-item">…</li> aka locator('li').filter({ hasText: 'Australia' })
+    2) <li class="ui-menu-item">…</li> aka locator('li').filter({ hasText: 'Austria' })
+
+Call log:
+  - expect.toBeHidden with timeout 5000ms
+  - waiting for locator('.ui-menu.ui-widget li')
+
+    at DropdownTest.selectCountryFromDropdown (D:\Playwright\tests\dropdownbest.spec.js:39:42)
+    at D:\Playwright\tests\dropdownbest.spec.js:61:3 {
+  [Symbol(step)]: {
+    stepId: 'expect@17',
+    category: 'expect',
+    title: 'expect.toBeHidden',
+    params: { expected: [Object] },
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'D:\\Playwright\\tests\\dropdownbest.spec.js',
+      line: 39,
+      column: 42,
+      function: 'DropdownTest.selectCountryFromDropdown'
+    },
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735488307130,
+    error: {
+      message: "Error: expect.toBeHidden: Error: strict mode violation: locator('.ui-menu.ui-widget li') resolved to 2 elements:\n" +
+        `    1) <li class="ui-menu-item">…</li> aka locator('li').filter({ hasText: 'Australia' })\n` +
+        `    2) <li class="ui-menu-item">…</li> aka locator('li').filter({ hasText: 'Austria' })\n` +
+        '\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeHidden with timeout 5000ms\x1B[22m\n' +
+        "\x1B[2m  - waiting for locator('.ui-menu.ui-widget li')\x1B[22m\n",
+      stack: "Error: expect.toBeHidden: Error: strict mode violation: locator('.ui-menu.ui-widget li') resolved to 2 elements:\n" +
+        `    1) <li class="ui-menu-item">…</li> aka locator('li').filter({ hasText: 'Australia' })\n` +
+        `    2) <li class="ui-menu-item">…</li> aka locator('li').filter({ hasText: 'Austria' })\n` +
+        '\n' +
+        'Call log:\n' +
+        '\x1B[2m  - expect.toBeHidden with timeout 5000ms\x1B[22m\n' +
+        "\x1B[2m  - waiting for locator('.ui-menu.ui-widget li')\x1B[22m\n" +
+        '\n' +
+        '    at DropdownTest.selectCountryFromDropdown (D:\\Playwright\\tests\\dropdownbest.spec.js:39:42)\n' +
+        '    at D:\\Playwright\\tests\\dropdownbest.spec.js:61:3',
+      cause: undefined
+    }
+  }
+}

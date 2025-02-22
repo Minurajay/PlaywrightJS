@@ -3,3 +3,10 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Allure reports
+allure-results/
+allure-report/
+
+#github workflows
+/.github/workflows

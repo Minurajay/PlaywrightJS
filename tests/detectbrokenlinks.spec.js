@@ -27,7 +27,7 @@ async function getAllLinksFromPage(page) {
 
 test.describe("No 404s on Checkly pages", () => {
   test("The docs have no 404s", async ({ page }, testInfo) => {
-    await page.goto("https://www.checklyhq.com/docs/");
+    await page.goto("https://demoqa.com/broken");
     const linkUrls = await getAllLinksFromPage(page);
     console.log(linkUrls);
 

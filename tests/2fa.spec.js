@@ -3,9 +3,9 @@ const OTPAuth = require("otpauth");
 
 test("Login with 2FA enabled", async ({ page }) => {
   // Credentials
-  const username = "customer2@practicesoftwaretesting.com";
-  const password = "welcome01";
-  const otpKey = "EXNPJPDUQ5BUH5RY"; // Secret key for TOTP
+  const username = "your.email+fakedata99212@gmail.com";
+  const password = "QEnXB4hkJ50JdLO#";
+  const otpKey = "MXPOBFGNRWHS6ARP"; // Secret key for TOTP
 
   // Function to generate OTP dynamically
   function generateOTP(secret) {
@@ -38,5 +38,5 @@ test("Login with 2FA enabled", async ({ page }) => {
 
   // Verify successful login
   await page.waitForSelector('[data-test="nav-menu"]', { state: "visible" });
-  await expect(page.locator('[data-test="nav-menu"]')).toHaveText(/Jack Howe/i);
+  await expect(page.locator('[data-test="nav-menu"]')).toHaveText(/Deanna Muller/i);
   });
